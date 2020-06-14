@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize - Components (Forms)</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  	<div class="row">
+      <form class="col s12">
+        <div class="input-field col s12">
+          <select>
+            <option value disabled selected>Selecione um valor</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>        
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="input-field col s12">
+          <select>
+            <optgroup label="Opções 1">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </optgroup>
+
+            <optgroup label="Opções 2">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </optgroup>
+          </select>
+          <label>Select</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="input-field col s12">
+          <select multiple>
+            <option value disabled selected>Selecione um valor</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="input-field col s12">
+          <select class="icons" disabled>
+            <optgroup label="Opções 1">
+              <option value="1" data-icon="img/face.jpg">Option 1</option>
+              <option value="2" class="circle" data-icon="img/face.jpg">Option 2</option>
+              <option value="3" class="circle left" data-icon="img/face.jpg">Option 3</option>
+            </optgroup>
+            
+            <optgroup label="Opções 2">
+              <option value="1" data-icon="img/tony.jpg">Option 1</option>
+              <option value="2" data-icon="img/tony.jpg">Option 2</option>
+              <option value="3" data-icon="img/tony.jpg">Option 3</option>
+            </optgroup>
+          </select>
+        </div>
+      </form>
+    </div>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="input-field col s12">
+        <input type="text" class="datepicker">
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="input-field col s12">
+        <input type="text" class="timepicker">
+      </div>
+    </form>
+  </div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Este exercício está sendo realizado no curso do framework do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript - Media (Materialbox & Slider)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+	<link rel="stylesheet" href="_css/style.css"/>
+</head>
+<body>
+	
+	<!--Para da zoom na imagem!-->
+	<!--<img class="mk6 materialboxed" data-caption="Projeto Amardura MK6" src="_img/mk6.jpg"/>-->
+
+	<!--A classe fullscreen que se coloca na primerira div é para o slider ocupar a tela inteira!-->
+	<div class="slider">
+    	<ul class="slides">
+      		<li>
+        		<img src="_img/slider1.jpg"> <!-- random image -->
+        		<!--As classes center-align/left-align/right-align é para indicar a direção do texto!-->
+        		<div class="caption center-align">
+          			<h3>This is our big Tagline!</h3>
+          			<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        		</div>
+      		</li>
+      		<li>
+        		<img src="_img/slider2.jpg"> <!-- random image -->
+        		<div class="caption left-align">
+          			<h3>Left Aligned Caption</h3>
+          			<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        		</div>
+      		</li>
+      		<li>
+        		<img src="_img/slider3.jpg"> <!-- random image -->
+        		<div class="caption right-align">
+          			<h3>Right Aligned Caption</h3>
+          			<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        		</div>
+      		</li>
+      		<li>
+        		<img src="_img/slider2.jpg"> <!-- random image -->
+        		<div class="caption center-align">
+          			<h3>This is our big Tagline!</h3>
+          			<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        		</div>
+      		</li>
+    	</ul>
+  	</div>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+
+	<script>
+		//codigo de inicialização se ouver mais de uma imagem para da zoom!
+		//$(document).ready(function(){
+			//$('.materialboxed').materialbox();
+		//});
+
+		$(document).ready(function(){
+			$('.slider').slider({
+				//Para retirar os indicadores de slider (bolinhas abaixo da imagem)
+				//indicators: false
+			});
+		});
+	</script>
+</body>
+</html>

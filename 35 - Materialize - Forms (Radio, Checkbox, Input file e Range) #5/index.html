@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize - Radio, Checkbox, Input file e Range</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  	<div class="row">
+      <form class="col s12">
+       
+       <!--Radio--> 
+      <p>
+        <input type="radio" name="times" id="teste">
+        <label for="teste">Flamengo</label>
+      </p>      
+      <p>
+        <input type="radio" class="with-gap" name="times" id="teste2">
+        <label for="teste2">Santos</label>  
+      </p>
+      <p>
+        <input type="radio" disabled="disabled" name="times" id="teste3">
+        <label for="teste3">Corintias</label>
+      </p>
+
+      <!--Checkbox-->
+      <p>
+        <input type="checkbox" class="filled-in" id="check1">
+        <label for="check1">Masculino</label>
+      </p>
+      <p>
+        <input type="checkbox" id="check2">
+        <label for="check2">Feminino</label>
+      </p>
+
+      <!--Botão marcado como Padrão e desabilitado-->
+      <p>
+        <input type="checkbox" checked id="sexo">
+        <label for="sexo">Masculino</label>
+      </p>
+
+      <p>
+        <input type="checkbox" disabled id="sexo1">
+        <label for="sexo1">Feminino</label>
+      </p>
+
+      </form>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="switch">
+          <label>
+            Desligado
+            <input type="checkbox">
+            <span class="lever"></span>
+            Ligado
+          </label>
+        </div>
+      </form>      
+    </div>
+
+    <!--Acrescentando multiple vc pode acrescentar mais de um arquivo-->
+    <div class="row">
+      <form class="col s12">
+        <div class="input-field file-field">
+          <div class="btn">
+            <span>Upload</span>
+            <input type="file" multiple>
+          </div>
+
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <p class="range-field">
+          <input type="range" id="range1" name="range-field" min="0" max="100">
+        </p>
+      </form>
+    </div>
+    
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

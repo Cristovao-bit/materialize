@@ -1,0 +1,52 @@
+/*Título*/
+.h-1{
+	text-align: center;
+	font-weight: 100;
+}
+
+.h-2{
+	text-align: center;
+	font-weight: 300;
+}
+
+.h-3{
+	text-align: center;
+	font-weight: 400;
+}
+
+.h-4{
+	text-align: center;
+	font-weight: 500;
+}
+
+.h-5{
+	text-align: center;
+	font-weight: 600;
+}
+
+
+/*Paragrafo*/
+.p-1{
+	text-align: justify;
+	font-weight: 100;
+}
+
+.p-2{
+	text-align: justify;
+	font-weight: 300;
+}
+
+.p-3{
+	text-align: justify;
+	font-weight: 400;
+}
+
+.p-4{
+	text-align: justify;
+	font-weight: 500;
+}
+
+.p-5{
+	text-align: justify;
+	font-weight: 600;
+}

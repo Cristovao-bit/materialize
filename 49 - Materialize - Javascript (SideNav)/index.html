@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Este exercício está sendo realizado no curso do framework do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (SideNav)</title>
+	<link rel="stylesheet" href="_css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+	<ul id="slide-out" class="side-nav">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="_img/office.jpg">
+				</div>
+
+				<a href="#!" title="Tony"><img class="circle" src="_img/tony.jpg"></a>
+				<a href="#!" title="Tony"><span class="white-text name">Tony Stark</span></a>
+				<a href="#!" title="Tony"><span class="white-text email">malibupoint@outlook.com</span></a>
+			</div>
+		</li>
+
+		<li><a class="waves-effect" href="#!">Home</a></li>
+		<li><div class="divider"></div></li>
+		<li><a href="#!"><i class="material-icons">cloud</i> Produtos</a></li>
+		<li><a class="subheader" href="#!">Contato</a></li>
+
+		<li class="no-padding">
+			<ul class="collapsible collapsible-accordion">
+				<li>
+					<a href="#!" class="collapsible-header waves-effect">Dropdown <i class="material-icons">arrow_drop_down</i></a>
+					<div class="collapsible-body">
+						<ul>
+							<li><a href="#!">Link 1</a></li>
+							<li><a href="#!">Link 2</a></li>
+							<li><a href="#!">Link 3</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<a class="btn" data-activates="slide-out"><i class="material-icons">menu</i></a>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script src="_js/script.js"></script>
+</body>
+</html>

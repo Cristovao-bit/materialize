@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Este exercício está sendo realizado no curso do framework do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (Tabs)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body>
+	
+	<div class="row">
+		<div class="col s12">
+			<ul class="tabs tabs-fixed-width">
+				<li class="tab col s3"><a href="#teste1">Teste 01</a></li>
+				<li class="tab col s3"><a href="#teste2" class="active">Teste 02</a></li>
+				<li class="tab col s3 disabled"><a href="">Teste 03</a></li>
+				<li class="tab col s3"><a href="http://www.google.com.br" target="_blank">Teste 04</a></li>
+			</ul>
+		</div>
+
+		<div id="teste1" class="col s12 red">
+			<h3>Tabs - Introdução</h3>
+			<p>A estrutura de abas consiste um uma lista de abas com identificadores correspondentes ao id da aba. Quando você clicar em uma aba, apenas o elemento com o id correspondente ao identificador da aba será visível. Você pode adicionar a classe .disabled para fazer a aba inacessível</p>
+		</div>
+
+		<div id="teste2" class="col s12 blue">
+			<h3>Tabs - Teste02</h3>
+			<p>A estrutura de abas consiste um uma lista de abas com identificadores correspondentes ao id da aba. Quando você clicar em uma aba, apenas o elemento com o id correspondente ao identificador da aba será visível. Você pode adicionar a classe .disabled para fazer a aba inacessível</p>
+		</div>
+	</div>
+
+	<a class="btn" id="alterar-aba">Alterar Aba</a>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script src="_js/script.js"></script>
+</body>
+</html>

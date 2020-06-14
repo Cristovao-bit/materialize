@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Este exercício está sendo realizado pelo curso do framework do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (Toasts e Tooltips)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+</head>
+<body>
+
+	<a class="btn" id="toast">Toast</a>
+
+	<a class="btn" id="removetoast">Remover Toast</a>
+
+	<br>
+	<br>
+
+	<!--<a class="btn tooltipped" id="tooltip">Tooltip</a>-->
+
+	<!--<a class="btn" onclick="Materialize.toast('Olá Mundo!' , 4000)">Toast</a>-->
+
+	<a class="btn tooltipped" data-delay="50" data-position="top" data-tooltip="Olá Mundo!">Tooltip</a>
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script>
+		$("#toast").click(function(){
+			var $conteudo = $('<span>Excluido com Sucesso!</span>').add($('<button class="btn-flat red-text toast-action">Cancelar</button>'));
+
+			//Materialize.toast('Olá Mundo!', 4000) // 4000 is the duration of the toast
+			//Materialize.toast('Olá Mundo!' , 4000 , 'rounded' , function(){alert('Funcionou!')})
+			Materialize.toast($conteudo , 4000)			
+		});
+
+		$("#removetoast").click(function(){
+			Materialize.Toast.removeAll();
+		});
+
+		//$(document).ready(function(){
+			//$('.tooltipped').tooltip({
+				//delay: 50,
+				//tooltip: 'Olá Mundo!',
+				//position: 'top' //left ou right ou bottom
+			//});
+		//});
+	</script>
+</body>
+</html>

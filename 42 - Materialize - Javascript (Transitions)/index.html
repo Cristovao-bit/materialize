@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Este exercício esta sendo realizado no curso do FrameWork do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (Transitions)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+	<!--fadeInImage-->
+	<!--<a href="#!" class="btn" id="fadeinimage">Mostra imagem</a>
+	<img id="image-test" src="_img/image1.jpg" class="slider" />-->
+
+	<!--showStaggeredList-->
+	<!--<a href="#!" class="btn" id="showlist">Mostrar Lista</a>--><!--Botão usado para ativar o slider-->
+	<ul id="staggered-test">
+		<li>
+			<div class="row">
+        		<div class="col s12 m6">
+          			<div class="card blue-grey darken-1">
+            			<div class="card-content white-text">
+              				<span class="card-title">Card Title</span>
+              				<p>I am a very simple card. I am good at containing small bits of information.
+              					I am convenient because I require little markup to use effectively.</p>
+            			</div>
+            			<div class="card-action">
+              				<a href="#">This is a link</a>
+              				<a href="#">This is a link</a>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+		</li>
+
+		<li>
+			<div class="row">
+        		<div class="col s12 m6">
+          			<div class="card blue-grey darken-1">
+            			<div class="card-content white-text">
+              				<span class="card-title">Card Title</span>
+              				<p>I am a very simple card. I am good at containing small bits of information.
+              					I am convenient because I require little markup to use effectively.</p>
+            			</div>
+            			<div class="card-action">
+              				<a href="#">This is a link</a>
+              				<a href="#">This is a link</a>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+		</li>
+	</ul>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script>
+		//fadeInImage
+		//$("#fadeinimage").click(function(){
+			//Materialize.fadeInImage('#image-test')
+		//});
+
+		//$("#showlist").click(function(){
+			//Materialize.showStaggeredList('#staggered-test')
+		//});
+
+		$(document).ready(function(){
+			Materialize.showStaggeredList('#staggered-test')
+		});
+	</script>
+</body>
+</html>

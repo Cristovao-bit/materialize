@@ -1,0 +1,78 @@
+.form_header h1{
+	text-align: center;
+	font-size: 2.5em;
+	color: #bdbdbd;
+}
+
+.form_header p{
+	text-align: center;
+	font-size: 1.1em;
+	color: #bdbdbd;
+}
+
+.form h3{
+	font-size: 1.1em;
+}
+
+.form p{
+	font-size: 0.8em;
+	color: #9e9e9e;
+}
+
+.local h3{
+	font-size: 1.1em;
+}
+
+.local p{
+	font-size: 0.9em;
+	color: #9e9e9e;
+}
+
+.local iframe{
+	width: 100%;
+	height: 200px;
+}
+
+/*Segundo Fomulário*/
+.contact h2{
+	font-size: 2.2em;
+	color: #4db6ac; 
+}
+
+.contact p{
+	font-size: 0.9em;
+	color: #4db6ac;
+	margin-bottom: 20px
+}
+
+.cont span{
+	font-size: 1.1em;
+	color: #000;
+}
+
+.cont {
+	font-size: 1em;
+}
+
+.cont a{
+	font-size: 1em;
+}
+
+.form_contact h2{
+	font-size: 2.2em;
+	color: #4db6ac;
+}
+
+.form_contact p{
+	font-size: 0.9em;
+	color: #4db6ac;
+	margin-bottom: 10px;
+}
+
+/* label color */
+   .input-field label {
+     color: #4db6ac;
+   }
+.btn{
+	margin-bottom: 20px;
+}

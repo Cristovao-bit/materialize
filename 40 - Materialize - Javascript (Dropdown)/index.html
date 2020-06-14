@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Esta página web está sendo construida no curso do materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (Dropdown)</title>
+	<link rel="stylesheet" href="_css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+	<a href="#!" title="Blog" data-beloworigin="true" data-hover="true" class="btn dropdown-button" data-activates="dropdown1">Blog - Saiba Mais</a>
+
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="#!">Notícias</a></li>
+		<li><a href="#!">Comentários</a></li>
+		<li class="divider"></li>
+		<li><a href="#!"><i class="material-icons">visibility</i>Mais Vistos</a></li>
+		<li><a href="#!"><i class="material-icons">swap_vertical_circle</i>Lançamentos</a></li>
+	</ul>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+
+	<script>
+		//$('.dropdown-button').dropdown({
+      		//inDuration: 300,
+      		//outDuration: 225,
+      		//constrainWidth: false, // Does not change width of dropdown to that of the activator
+      		//hover: true, // Activate on hover
+      		//hover: false,
+      		//gutter: 0, // Spacing from edge
+      		//belowOrigin: false, // Displays dropdown below the button
+      		//alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      		//stopPropagation: false // Stops event propagation
+    		//});
+		//});
+	</script>
+</body>
+</html>

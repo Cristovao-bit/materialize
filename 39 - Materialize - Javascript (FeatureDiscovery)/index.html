@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Curso de FrameWork Materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Javascript (FeatureDiscovery)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+	<link rel="stylesheet" href="_css/style.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="fixed-action-btn">
+		<a id="menu" href="#!" class="btn btn-floating red waves-effect waves-light"><i class="material-icons">menu</i></a>
+	</div>
+
+	<div class="tap-target red" data-activates="menu">
+		<div class="tap-target-content">
+			<h5>Feature Discovery</h5>
+			<p>Agregue valor e encorage o usuário a retornar o introduzindo a novas funcionalidades em momentos e contextos relevantes.</p>
+		</div>
+	</div>
+
+	<a id="open" href="#!" class="btn waves-effect red waves-light">Open</a>
+	<a id="close" href="#!" class="btn waves-effect red waves-light">Close</a>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script>
+		$('#open').click(function(){
+			$('.tap-target').tapTarget('open');
+		});
+		$('#close').click(function(){
+			$('.tap-target').tapTarget('close');
+		});
+	</script>
+</body>
+</html>

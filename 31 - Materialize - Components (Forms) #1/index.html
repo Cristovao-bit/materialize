@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Materialize - Components (Forms)</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  	<div class="row">
+  		<form class="col s12">
+  			<div class="input-field col s6">
+  				<input type="text" id="nome" placeholder="Seu Nome">
+  				<label for="nome">Nome Completo</label>
+  			</div>
+  			<div class="input-field col s6">
+  				<input type="email" id="email" class="validate">
+  				<label data-error="Email Inválido!" for="email">E-mail</label>
+  			</div>
+  		</form>
+  	</div>
+
+  	<div class="row">
+  		<form class="col s12">
+  			<div class="input-field col s6">
+  				<input type="email" id="email" class="validate">
+  				<label data-success="Email Válido!" for="email">E-mail</label>
+  			</div>
+  			<div class="input-field col s6">
+  				<input data-length="8" type="password" id="password" class="validate">
+  				<label for="password">Password</label>
+  			</div>
+  		</form>
+  	</div>
+
+  	<div class="row">
+  		<form class="col s12">
+  			<div class="input-field col s6">
+  				<input disabled type="text" id="nome">
+  				<label for="nome">Nome:</label>
+  			</div>
+  			<div class="input-field col s6">
+  				<i class="material-icons prefix">phone</i>
+  				<input type="tel" id="icon_telephone" class="validate">
+  				<label for="icon_telephone">Telefone:</label>
+  			</div>
+  		</form>
+  	</div>
+
+	<div class="row">
+		<form class="col s12">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">edit_mode</i>
+				<textarea class="materialize-textarea" id="text"></textarea>
+				<label for="text">Sua Mensagem:</label>
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<form class="col s12">
+			Digite Seu Email:
+			<div class="input-field inline">
+				<input type="email" id="email">
+				<label for="email">Email</label>
+			</div>
+		</form>		
+	</div>
+
+	<div class="row">
+		<form class="col s6">
+			<div class="input-field">
+				<input type="text" id="autocomplete">
+				<label for="autocomplete">Empresa de Informática</label>
+			</div>			
+		</form>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

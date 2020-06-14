@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Este exercício esta sendo realizado no curso do framework do Materialize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Materialize - Javascript (Collapsible)</title>
+	<link rel="stylesheet" href="_css/materialize.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	
+	<!--data-collapsible podemos colocar accordion ou expanble-->
+	<ul class="collapsible popout" data-collapsible="expanble">
+		<li>
+			<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+			<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>
+		<li>
+			<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+			<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>
+		<li>
+			<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+			<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+		</li>	
+	</ul>
+
+	<script src="_js/jquery.js"></script>
+	<script src="_js/materialize.js"></script>
+	<script src="_js/script.js"></script>
+	<script>
+		//$('.collapsible').collapsible({
+    		//accordion: false, // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    		//onOpen: function(el) { alert('Open'); }, // Callback for Collapsible open
+    		//onClose: function(el) { alert('Closed'); } // Callback for Collapsible close
+  		//});
+
+  		// Open
+  		//$('.collapsible').collapsible('open', 0);
+
+  		// Close
+  		//$('.collapsible').collapsible('close', 0);
+
+  		// Destroy
+  		//$('.collapsible').collapsible('destroy');              
+	</script>
+</body>
+</html>
